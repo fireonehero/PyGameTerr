@@ -8,7 +8,7 @@ class Scene:
 
         self.sprites = pygame.sprite.Group()
         self.entity = Entity([self.sprites])
-        Entity([self.sprites], position = (100, 100))
+        Entity([self.sprites], position = (100, 100), image = pygame.image.load('res/player.png').convert_alpha())
         Entity([self.sprites], position = (200, 200))
 
         self.player = Player([self.sprites])
